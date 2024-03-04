@@ -4,7 +4,7 @@ import java.util.List;
 
 import br.edu.ifpb.esperanca.padroes.editais.domain.Notice;
 
-public interface FacadeProfessor implements {
+public interface FacadeProfessor{
     boolean login(String userName, String senha);
     List<Notice> listarEditais();
     List<Notice> buscarEdital(String termo);
