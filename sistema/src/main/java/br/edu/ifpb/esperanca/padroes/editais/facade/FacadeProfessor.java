@@ -2,10 +2,12 @@ package br.edu.ifpb.esperanca.padroes.editais.facade;
 
 import java.util.List;
 
-public interface FacadeProfessor {
+import br.edu.ifpb.esperanca.padroes.editais.domain.Notice;
+
+public interface FacadeProfessor implements {
     boolean login(String userName, String senha);
-    List<Edital> listarEditais();
-    List<Edital> buscarEdital(String termo);
+    List<Notice> listarEditais();
+    List<Notice> buscarEdital(String termo);
     void postarEdital();
     void removerEdital(int idEdital);
     void editarEdital(int idEdital);
