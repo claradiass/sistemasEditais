@@ -1,7 +1,11 @@
-package br.edu.ifpb.esperanca.padroes.editais.models.validators;
+package br.edu.ifpb.esperanca.padroes.editais.domain.models;
 
 public class Name {
     private String name;
+
+    public Name(String name) {
+        this.name = name;
+    }
    
     public String getName() {
         return name;
@@ -11,9 +15,7 @@ public class Name {
         this.name = name;
     }
 
-    public Name(String name) {
-        this.name = name;
-    }
+    
 
     public validateName(){
         

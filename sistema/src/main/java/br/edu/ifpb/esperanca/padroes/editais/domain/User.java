@@ -1,4 +1,4 @@
-package br.edu.ifpb.esperanca.padroes.editais.models;
+package br.edu.ifpb.esperanca.padroes.editais.domain;
 
 public class User {
     private String name;
