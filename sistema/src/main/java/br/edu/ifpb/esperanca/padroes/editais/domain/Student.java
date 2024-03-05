@@ -1,14 +1,19 @@
 package br.edu.ifpb.esperanca.padroes.editais.domain;
 
-import java.util.ArrayList;
-import java.util.List;
+import br.edu.ifpb.esperanca.padroes.editais.domain.collections.NoticesRegistered;
+import br.edu.ifpb.esperanca.padroes.editais.domain.models.Name;
+import br.edu.ifpb.esperanca.padroes.editais.domain.models.Password;
+import br.edu.ifpb.esperanca.padroes.editais.domain.models.UserName;
 
 public class Student extends User{
-    private List<Notice> notices;
-
-    public Student(String name, String password, String userName) {
+    private NoticesRegistered registeredNotices;
+    
+    public Student(Name name, Password password, UserName userName) {
         super(name, password, userName);
-        this.notices = new ArrayList<Notice>();
-
+        this.registeredNotices = new NoticesRegistered(); 
     } 
+
+    public NoticesRegistered getRegisteredNotices() {
+        return registeredNotices;
+    }
 }
